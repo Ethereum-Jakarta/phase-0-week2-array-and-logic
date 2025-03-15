@@ -4,6 +4,8 @@ Selamat bagi yang sudah menyelesaikan Quiz Minggu Pertama
 
 pada pertemuan kali ini kita akan mendalami tipe data Array
 
+![image](https://github.com/user-attachments/assets/e2058514-a2e6-4e0f-860f-5e4a905cffd3)
+
 ***APA ARRAY ITU???***
 Simplenya Array adalah kumpulan dari berbagai data, Array itu seperti List
 kalian bisa menampung banyak data pada satu variabel array
@@ -43,6 +45,9 @@ selebihnya bisa diliat disini
 
 langsung gaskan saja kita bahas method-methodnya satu persatu
 
+![image](https://github.com/user-attachments/assets/1780e203-3825-4fc4-baa3-2d634c98318b)
+
+
 method `length` akan me-return nilai total elemen/item yang ada pada array
 ```js
 let hewan = ["gajah", "jerapah"]
@@ -52,12 +57,18 @@ let angka = [3,2,1,4,5,6,7]
 console.log(angka.length) //7
 ```
 
+![image](https://github.com/user-attachments/assets/8fd41414-659f-4ba2-a063-b1cdced0616c)
+
+
 method `push()` berfungsi untuk memasukan data pada urutan terakhir array atau bisa dibilang memasukan data ke paling kanan wkwk
 ```js
 let hewan = ["marmut", "kucing"];
 hewan.push("tikus");
 console.log(hewan); //["marmut", "kucing", "tikus"]
 ```
+
+![image](https://github.com/user-attachments/assets/4f1cac40-b66c-441a-a9d0-59b63cef3cbd)
+
 
 method `pop()` berfungsi untuk menghapus elemen terkahir pada array, bisa dibilang ngehapus yang elemen array paling kanan wkwk
 ```js
@@ -66,6 +77,9 @@ hewan.pop();
 console.log(hewan); //["marmut", "kucing"];
 ```
 
+![image](https://github.com/user-attachments/assets/5be8d2b4-148e-4327-aad8-4c54705310f4)
+
+
 method `shift()` berfungsi untuk menghapus elemen pertama pada array, bisa dibilang ngehapus yang paling kiri wkwk
 ```js
 let hewan = ["marmut", "kucing", "tikus"];
@@ -73,12 +87,18 @@ hewan.shift();
 console.log(hewan); //["kucing", "tikus"];
 ```
 
+![image](https://github.com/user-attachments/assets/b1698858-dbda-450c-af8b-5b62b0c572ae)
+
+
 method `unshift()` berfungsi menambahkan data pada urutan pertama, bisa dibilang nambahin sesuatu dipaling kiri wkwk
 ```js
 let hewan = ["marmut", "kucing"];
 hewan.unshift("tikus");
 console.log(hewan); //["tikus", "marmut", "kucing"];
 ```
+
+![image](https://github.com/user-attachments/assets/cb8cd414-af69-41e2-a5ff-07a3792168dc)
+
 
 method `splice` berfungsi bisa menambahkan data, bisa menghapus data pada array, bisa dua duanya sekaligus tergantung isi parameter yang kalian berikan pada splice
 contoh `.splice(0,1,"gajah", "macan")` 
@@ -113,6 +133,9 @@ console.log(hewan); //["marmut", "gajah", "jerapah", "singa"]
 ```
 
 yak splice emang rada multi-fungsi sih, kalian cobain sendiri ya biar lebih paham
+
+![image](https://github.com/user-attachments/assets/caea164a-9ced-4064-9a40-5134d78b1c5e)
+
 
 method `slice` berfungsi untuk memotong array tergantung dari nilai parameter yang kalian kasih
 contoh `.slice(1, 4)`
