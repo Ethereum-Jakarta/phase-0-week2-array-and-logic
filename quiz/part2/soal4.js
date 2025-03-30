@@ -11,7 +11,6 @@ function pasanganTerbesar(num) {
       let pasangan = angka1 * 10 + angka2;
       if (pasangan > max) {
         max = pasangan;
-      
           
     }
     
