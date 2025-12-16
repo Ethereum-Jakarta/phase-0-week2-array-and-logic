@@ -15,7 +15,7 @@ function perkalianUnik(arr) {
       if (j !== i) {
         unik *= arr[j];
       }
-      console.log(unik);
+      
     }
     jumlah.push(unik)
   }

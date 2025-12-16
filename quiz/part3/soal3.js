@@ -1,11 +1,11 @@
 //tentukan apakah ini deret aritmatika atau bukan
 function tentukanDeretAritmatika(arr) {
   // you can only write your code here!
-  a = arr[0]
+  a = arr[1] - arr[0]
   for (let i = 0; i < arr.length; i++) {
-    let aritmatika = i + a;
-    console.log(aritmatika)
+    
   }
+  
 }
 
 // TEST CASES

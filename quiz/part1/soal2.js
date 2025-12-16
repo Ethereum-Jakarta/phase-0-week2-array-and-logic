@@ -26,11 +26,11 @@ function dataHandling2(input) {
   console.log(tanggalSort)
 
   // method join
-  let tanggalJoin =  tanggal.join('-');
+  let tanggalJoin = tanggal.join('-');
   console.log(tanggalJoin);
 
   // method slice
-  console.log(input[1].slice(0, 15))
+  console.log(input[1].slice(0, 14))
 
 }
 
