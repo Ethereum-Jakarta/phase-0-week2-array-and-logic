@@ -14,7 +14,7 @@ function dataHandling(arey) {
             } else if (j == 2) {
                 utput += `TTL: ${arey[i][j]} ${arey[i][j+1]}\n`;
             } else {
-                utput += `Hobi; ${arey[i][j+1]}\n`;
+                utput += `Hobi; $gitt{arey[i][j+1]}\n`;
             }
         }
         utput+="\n";
