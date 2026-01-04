@@ -4,30 +4,19 @@ Diberikan sebuah function targetTerdekat(arr) yang menerima satu parameter berup
 */
 function targetTerdekat(arr) {
   // you can only write your code here!
-  let jarakKanan;
-  let jarakKiri;
+  let jarak = Infinity;
+
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == "o") {
-      for (let j = i + 1; j < arr.length; j++) {
-        if (arr[j] == "x") {
-          jarakKanan = j - i;
-          break;
-        }
-      }
-      for (let j = i - 1; j >= 0; j--) {
-        if (arr[j] == "x") {
-          jarakKiri = i - j;
-          break;
+    if (arr[i] === "o") {
+      for (let j = 0; j < arr.length; j++) {
+        if (arr[j] === "x") {
+          jarak = Math.min(jarak, Math.abs(j - i));
         }
       }
     }
   }
 
-  if (jarakKanan == undefined && jarakKiri != undefined) return jarakKiri;
-  if (jarakKanan != undefined && jarakKiri == undefined) return jarakKanan;
-  else if (jarakKanan > jarakKiri) return jarakKiri;
-  else if (jarakKanan < jarakKiri)return jarakKanan;
-  else return 0;
+  return jarak === Infinity ? 0 : jarak;
 }
 
 // TEST CASES

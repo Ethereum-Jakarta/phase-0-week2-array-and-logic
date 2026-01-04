@@ -5,19 +5,14 @@ fungsi ini akan me-return array 2 dimensi
 */
 function groupAnimals(animals) {
   // you can only write your code here!
-  let hasil = [];
-  let kelA = [], kelC = [], kelK = [], kelU = [];
+  let groups = [];
   for (let a of animals) {
-    if (a[0] == "a") kelA.push(a);
-    if (a[0] == "c") kelC.push(a);
-    if (a[0] == "k") kelK.push(a);
-    if (a[0] == "u") kelU.push(a);
+    let huruf = a[0];
+    if (!groups[huruf]) groups[huruf] = [];
+    groups[huruf].push(a);
   }
-  if (kelA.length > 0) hasil.push(kelA); 
-  if (kelC.length > 0) hasil.push(kelC); 
-  if (kelK.length > 0) hasil.push(kelK); 
-  if (kelU.length > 0) hasil.push(kelU); 
-  return hasil;
+
+  return Object.values(groups).sort();
 }
 
 // TEST CASES
