@@ -9,8 +9,8 @@ function palindrome(kata) {
     if (kata[i] != kata[kata.length - 1 - i]) {
         return false;
     }
-    return true;
   }
+      return true;
 }
 
 // TEST CASES
