@@ -53,7 +53,7 @@ function dataHandling2(input) {
     console.log(namaBulan);
 
     let tanggalSort = tanggal.slice();
-    tanggalSort.socrt(function(a, b) { return b - a; });
+    tanggalSort.sort(function(a, b) { return b - a; });
     console.log(tanggalSort);
 
     let tanggalGabung = tanggal.join("-");
