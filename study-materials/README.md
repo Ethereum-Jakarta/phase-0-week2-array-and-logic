@@ -1,6 +1,6 @@
-# Study Materials
+# Study Materials 🧙‍♂️
 
-Halo sobat nolep, welcome to week 2. Disini materinya hanya ada 1 part, dan baca materi part 1 dulu dan sisanya kalian akan menghadapi quiz yang menyebalkan 🗿
+Halo Etherean, welcome to week 2. Disini materinya hanya ada 1 part, dan baca materi part 1 dulu dan sisanya kalian akan menghadapi Arcane Quest yang menyebalkan 🗿
 
 Good Luck 🗿
 

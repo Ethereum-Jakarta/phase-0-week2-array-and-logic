@@ -1,6 +1,8 @@
-# Week2 Array and Logic Nolep
+# Week 2 - Array and Arcane Quest
 
-Selamat datang di modul "Array and Logic" dengan JavaScript! Modul ini dirancang khusus untuk pemula yang baru memulai perjalanan mereka dalam mempelajari logika pemrograman dengan array di JavaScript.
+Selamat datang di modul **"Array and Logic"** dengan JavaScript! 🧙‍♂️
+
+Modul ini dirancang khusus untuk pemula yang baru memulai perjalanan mereka dalam mempelajari logika pemrograman dengan array di JavaScript.
 
 ## Apa yang akan Kalian pelajari?
 
@@ -26,7 +28,7 @@ Selamat datang di modul "Array and Logic" dengan JavaScript! Modul ini dirancang
 
 1. **Mulailah dengan membaca materi yang tersedia di setiap folder.** Setiap topik disertai dengan penjelasan mendetail dan contoh kode yang bisa Kalian pelajari.
 2. **Coba tulis kode Kalian sendiri!** Setiap bagian menyertakan latihan praktis yang bisa Kalian coba untuk menguji pemahaman Kalian.
-3. **Bergabunglah dengan komunitas.** Jangan ragu untuk bertanya atau berdiskusi dengan sesama pemula di bagian issues atau melalui pull requests.
+3. **Bergabunglah dengan komunitas.** Jangan ragu untuk bertanya atau berdiskusi dengan sesama Etherean di bagian issues atau melalui pull requests.
 
 ## Tips Belajar di Week 2
 
@@ -35,13 +37,13 @@ Kalian harus bisa memahami alur looping dan bisa menggunakan loop untuk segala s
 **Ini akan sulit, karena disini challengenya untuk menuju seorang programmer yang kuat secara fundamental*
 
 ## Week 2 Study Materials
-- [Array & Logic](https://github.com/RPN-Phase-0/Week2-Array-and-Logic-Nolep/blob/main/study-materials/part1.md)
+- [Array & Logic](./study-materials/part1.md)
 
-## Week 2 Logic Nolep (Quiz)
-- [Part1](https://github.com/RPN-Phase-0/Week2-Array-and-Logic-Nolep/tree/main/quiz/part1)
-- [Part2](https://github.com/RPN-Phase-0/Week2-Array-and-Logic-Nolep/tree/main/quiz/part2)
-- [Part3](https://github.com/RPN-Phase-0/Week2-Array-and-Logic-Nolep/tree/main/quiz/part3)
-- [Ujian Week2](https://github.com/RPN-Phase-0/Week2-Array-and-Logic-Nolep/tree/main/quiz/ujian)
+## Week 2 Arcane Quest (Quiz)
+- [Part1](./quiz/part1/README.md)
+- [Part2](./quiz/part2/README.md)
+- [Part3](./quiz/part3/README.md)
+- [Ujian Week2](./quiz/ujian/README.md)
 
 ## Dukung Kami
 
@@ -49,4 +51,4 @@ Jika Kalian menemukan repo ini bermanfaat, jangan lupa untuk memberikan bintang 
 
 Selamat belajar dan selamat datang di dunia pemrograman! 🚀
 
-[Discord RPN](https://discord.gg/ufbRBRTKN8)
+[Discord ETHJKT](https://discord.gg/Bb7UF4vuK4)

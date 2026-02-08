@@ -160,6 +160,6 @@ let slicedHewan = hewan.slice(1,3);
 console.log(slicedHewan) //["jerapah", "badak"]
 ```
 
-Itulah materi untuk week2 ini, habiskan waktu kalian dengan latihan quiz quiz di RPN dan explore lebih banyak lagi tentang array.
+Itulah materi untuk week2 ini, habiskan waktu kalian dengan latihan quiz quiz di ETHJKT dan explore lebih banyak lagi tentang array.
 
 [Tutorial Array by Harkon](https://youtu.be/fQulHC3Ujdo) 🗿
