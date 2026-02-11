@@ -13,7 +13,14 @@ Diberikan sebuah function palindrome(kata) yang menerima satu parameter. Functio
 */
 
 function palindrome(kata) {
-  // you can only write your code here!
+    let kataDibalik = '';
+    for(let i=kata.length-1;i>=0;i--) {
+      kataDibalik += kata[i];
+    }
+    if(kataDibalik === kata){
+      return `true`;
+    }
+    return `false`;
 }
 
 // TEST CASES
@@ -34,7 +41,20 @@ note kenapa angka 343 adalah palindrome? karena angka 343 dibalik tetep 343 eaaa
 */
 
 function angkaPalindrome(num) {
-  // you can only write your code here!
+    let numString = '';
+    let reverseNum = '';
+    do {
+        num++;
+        numString = num.toString();
+        reverseNum = '';
+
+        for (let i = numString.length - 1; i >= 0; i--) {
+            reverseNum += numString[i];
+        }
+
+    } while (numString !== reverseNum); 
+
+    return num;
 }
 
 // TEST CASES
@@ -48,9 +68,16 @@ console.log(angkaPalindrome(1000)); // 1001
 ## Soal 3
 ```js
 function hitungJumlahKata(kalimat) {
-  // you can only write your code here!
-}
-
+    let count=0;
+    for(let i=0;i<kalimat.length;i++){
+        if(kalimat[i] === ' '){
+            count++;
+        }
+    }
+    count++;
+    return count;
+  }
+  
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4
 console.log(hitungJumlahKata('Never eat shredded wheat or cake')); // 6
@@ -62,10 +89,21 @@ console.log(hitungJumlahKata('I believe I can code')); // 5
 ## Soal 4
 ```js
 function pasanganTerbesar(num) {
-  // you can only write your code here!
+    let num1 = 1;
+    let num2 = -1;
+    let numString = num.toString();
+    let tempBiggest = 0;
+    for(let i=0;i<numString.length;i++){
+        if(tempBiggest < numString.slice(num2, num1)){
+            tempBiggest = numString.slice(num2,num1);
+        }
+        num1++;
+        num2++;
+    }
+    return tempBiggest;
 }
-
-// TEST CASES
+  
+  // TEST CASES
 console.log(pasanganTerbesar(641573)); // 73
 console.log(pasanganTerbesar(12783456)); // 83
 console.log(pasanganTerbesar(910233)); // 91
