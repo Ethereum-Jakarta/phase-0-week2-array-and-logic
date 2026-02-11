@@ -3,8 +3,13 @@
 ## Soal 1
 ```js
 function cariMean(arr) {
-  // you can only write your code here!
-}
+    // you can only write your code here!
+    let total = 0;
+    for (let i = 0; i < arr.length; i++) {
+      total += arr[i];
+    }
+    return Math.round(total / arr.length);
+  }
 
 // TEST CASES
 console.log(cariMean([1, 2, 3, 4, 5])); // 3
@@ -21,8 +26,20 @@ console.log(cariMean([7, 7, 7, 7, 7])); // 7
 Diberikan sebuah function perkalianUnik(arr) yang menerima satu parameter berupa array yang berisikan angka. Function akan me-return array baru yang mengandung angka yang setiap nilainya merupakan hasil kali angka lain yang bukan angka itu sendiri. Contoh, jika arr adalah [1, 2, 3, 4, 5], maka function akan mereturn [120, 60, 40, 30, 24], karena 120 adalah 2 * 3 * 4 * 5, 60 adalah 1 * 3 * 4 * 5, 40 adalah 1 * 2 * 4 * 5, dan seterusnya.
 */
 function perkalianUnik(arr) {
-  // you can only write your code here!
-}
+    // you can only write your code here!
+    let result = [];
+    for (let i = 0; i < arr.length; i++) { // Perulangan untuk mencari index karena arr adalah array, i ini adalah arr pertama
+        let temp = 1; // temp untuk menampung hasil perkalian untuk setiap index
+        for (let j = 0; j < arr.length; j++) { // Perulangan untuk mencari index dari arr juga, perulangan kedua, jadi j ini sebagai arr kedua
+            if (i !== j) { // Validasi jika i tidak sama dengan j, perulangan kedua akan dilakukan untuk mencari angka selanjutnya untuk menambahkan ke temp, contoh jika 2 !== 4, maka 4 akan dimasukan ke temp, dan seterusnya
+                temp *= arr[j]; 
+            }
+        }
+        result.push(temp);
+    }
+    return result;
+  }
+  
 
 // TEST CASES
 console.log(perkalianUnik([2, 4, 6])); // [24, 12, 8]
@@ -36,8 +53,16 @@ console.log(perkalianUnik([2, 1, 8, 10, 2])); // [160, 320, 40, 32, 160]
 ```js
 //tentukan apakah ini deret aritmatika atau bukan
 function tentukanDeretAritmatika(arr) {
-  // you can only write your code here!
-}
+    // you can only write your code here!
+    let panjang = arr.length;
+    let selisih = arr[1] - arr[0];
+    for (let i = 1; i < panjang; i++) {
+      if (arr[i] - arr[i - 1] !== selisih) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 // TEST CASES
 console.log(tentukanDeretAritmatika([1, 2, 3, 4, 5, 6])); // true
@@ -50,8 +75,16 @@ console.log(tentukanDeretAritmatika([1, 2, 3, 4, 7, 9])); // false
 ## Soal 4
 ```js
 function tentukanDeretGeometri(arr) {
-  // you can only write your code here!
-}
+    // you can only write your code here!
+    let panjang = arr.length;
+    let selisih = arr[1] / arr[0];
+    for (let i = 1; i < panjang; i++) {
+      if (arr[i] / arr[i - 1] !== selisih) {
+        return false;
+      }
+    }
+    return true;
+  }
 
 // TEST CASES
 console.log(tentukanDeretGeometri([1, 3, 9, 27, 81])); // true

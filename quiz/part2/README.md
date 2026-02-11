@@ -13,8 +13,11 @@ Diberikan sebuah function palindrome(kata) yang menerima satu parameter. Functio
 */
 
 function palindrome(kata) {
-  // you can only write your code here!
-}
+    // you can only write your code here!
+    let balikKata = kata.split("").reverse().join("")
+    return kata === balikKata
+  }
+  
 
 // TEST CASES
 console.log(palindrome('katak')); // true
@@ -34,8 +37,15 @@ note kenapa angka 343 adalah palindrome? karena angka 343 dibalik tetep 343 eaaa
 */
 
 function angkaPalindrome(num) {
-  // you can only write your code here!
-}
+    // you can only write your code here!
+    for (let i = num + 1; ; i++) { // Perulangan untuk mencari angka selanjutnya untuk angka palindrome, dimulai dengan angka num + 1, dan melakukan penambahan terus jika belum palindrome
+      let balikNum = i.toString().split("").reverse().join(""); // Variabel untuk mengubah angka menjadi string, lalu mengecek apakah palindrome apa bukan dengan dibalik angkanya
+      if (i.toString() === balikNum) { // Validasi apakah angka palindrome apa bukan
+        return i; // Jika palindrome maka return angka tersebut
+      }
+    }
+  }
+  
 
 // TEST CASES
 console.log(angkaPalindrome(8)); // 9
@@ -48,8 +58,9 @@ console.log(angkaPalindrome(1000)); // 1001
 ## Soal 3
 ```js
 function hitungJumlahKata(kalimat) {
-  // you can only write your code here!
-}
+    // you can only write your code here!
+    return kalimat.split(' ').length;
+  }
 
 // TEST CASES
 console.log(hitungJumlahKata('I have a dream')); // 4
@@ -62,7 +73,16 @@ console.log(hitungJumlahKata('I believe I can code')); // 5
 ## Soal 4
 ```js
 function pasanganTerbesar(num) {
-  // you can only write your code here!
+    // you can only write your code here!
+    let number = num.toString();
+    let terBesar = "";
+    for (let i = 0; i < number.length - 1; i++) {
+      let pair = number[i] + number[i + 1]
+      if (pair > terBesar) {
+        terBesar = pair;
+      }
+    }
+    return terBesar;
 }
 
 // TEST CASES
