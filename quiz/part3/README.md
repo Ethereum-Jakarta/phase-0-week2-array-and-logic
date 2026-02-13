@@ -4,6 +4,7 @@
 ```js
 function cariMean(arr) {
   // you can only write your code here!
+  
 }
 
 // TEST CASES
