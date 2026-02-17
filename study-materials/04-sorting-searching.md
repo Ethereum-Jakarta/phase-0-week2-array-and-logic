@@ -247,8 +247,11 @@ let unique = data.filter(function(item, index) {
 });
 console.log(unique); // [1, 2, 3, 4, 5, 7, 9]
 
-// Step 3: Binary search angka 7
-console.log(binarySearch(unique, 7)); // 5 (index ke-5)
+// Step 3: Cari angka 7 pakai indexOf (simple search)
+console.log(unique.indexOf(7)); // 5 (index ke-5)
+
+// Atau pakai binarySearch dari atas kalau udah bikin fungsinya:
+// console.log(binarySearch(unique, 7)); // 5
 ```
 
 ---
