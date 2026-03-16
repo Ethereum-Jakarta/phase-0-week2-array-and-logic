@@ -14,6 +14,7 @@ Diberikan sebuah function palindrome(kata) yang menerima satu parameter. Functio
 
 function palindrome(kata) {
   // you can only write your code here!
+  
 }
 
 // TEST CASES
@@ -63,6 +64,7 @@ console.log(hitungJumlahKata('I believe I can code')); // 5
 ```js
 function pasanganTerbesar(num) {
   // you can only write your code here!
+  
 }
 
 // TEST CASES
