@@ -7,6 +7,7 @@ Diberikan sebuah function targetTerdekat(arr) yang menerima satu parameter berup
 */
 function targetTerdekat(arr) {
   // you can only write your code here!
+  
 }
 
 // TEST CASES
@@ -19,7 +20,7 @@ console.log(targetTerdekat([' ', 'o', ' ', 'x', 'x', 'o', ' ', 'x'])); // 1
 ```
 ## Soal 2
 ```js
-/*
+/*4
 Diberikan sebuah function mengelompokkanAngka(arr) yang menerima satu parameter berupa array yang berisi angka-angka. Function akan me-return array multidimensi dimana array tersebut berisikan 3 kategori/kelompok:
 
 kelompok pertama (baris pertama) merupakan angka-angka genap
