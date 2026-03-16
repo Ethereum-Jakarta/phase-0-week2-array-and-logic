@@ -43,7 +43,7 @@ pada soal yg kedua, kalian harus belajar method `splice`, `slice`, `join`, 'spli
 ```js
 let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 
-function dataHandling(input) {
+function dataHandling(input) {  //permisi ini typo atau gimana, yang dibuat function dataHandling tapi yang dipanggil dataHandling2...
 
 }
 
