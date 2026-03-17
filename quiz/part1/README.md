@@ -13,6 +13,21 @@ let input = [
                 ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
             ]
 
+for(let i = 0; i < input.length; i++) {
+    for(let j = 0; j <= input.length; j++) {
+        if(j === 0) {
+            console.log(`Nomor ID:  ${input[i][j]}`);
+        } else if(j === 1) {
+            console.log(`Nama Lengkap:  ${input[i][j]}`);
+        } else if(j === 2) {
+            console.log(`TTL:  ${input[i][j]} ${input[i][j + 1]}`);
+        } else if(j === 4) {
+            console.log(`Hobi:  ${input[i][j]}`);
+            console.log("");
+        }
+    }
+}
+
 /*
 output yang diharapkan
 
@@ -44,10 +59,39 @@ pada soal yg kedua, kalian harus belajar method `splice`, `slice`, `join`, 'spli
 let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 
 function dataHandling(input) {
+    input.splice(1, 1, "Roman Alamsyah Elsharawy");
+    input.splice(2, 1, "Provinsi Bandar Lampung");
+    input.splice(4, 1, "Pria", "SMA Internasional Metro");
+
+    let tanggal = input[3].split("/");
+    let bulan = tanggal[1];
+    let tahun = tanggal[2];
+    let hari = tanggal[0];
+    let nama = input[1].slice(0, 15);
+
+    if(bulan == "05") {
+        bulan = "Mei";
+    }
+
+    //  * ["0001", "Roman Alamsyah Elsharawy", "Provinsi Bandar Lampung", "21/05/1989", "Pria", "SMA Internasional Metro"]
+    console.log(input);
+
+    // Mei
+    console.log(bulan);
+
+    // ["1989", "21", "05"]
+    bulan = tanggal[1]
+    console.log([tahun, hari, bulan]);
+
+    // 21-05-1989
+    console.log(hari + "-" + bulan + "-" + tahun);
+
+    // Roman Alamsyah
+    console.log(nama);
 
 }
 
-dataHandling2(input);
+dataHandling(input);
 
 /**
  * keluaran yang diharapkan (pada console)
