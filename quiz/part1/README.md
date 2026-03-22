@@ -36,14 +36,20 @@ Nama Lengkap:  Bintang Senjaya
 TTL:  Martapura 6/4/1970
 Hobi:  Berkebun
 */
+
+function dataHandling(input) {
+
+}
+
+dataHandling(input);
 ```
 
 ## Soal 2 
-pada soal yg kedua, kalian harus belajar method `splice`, `slice`, `join`, 'split', dan lainnya
+pada soal yg kedua, kalian harus belajar method `splice`, `slice`, `join`, `split`, dan lainnya
 ```js
 let input = ["0001", "Roman Alamsyah ", "Bandar Lampung", "21/05/1989", "Membaca"];
 
-function dataHandling(input) {
+function dataHandling2(input) {
 
 }
 
